@@ -39,10 +39,10 @@ public class Course implements Information {
         }
     }
 
-
+    //Реализация метода из интерфейса
     @Override
     public void showInfo() {
-        System.out.println("Информация по предметам: " + getName() + ", " + getHours() + " часов");
+        System.out.println("Информация по предмету: " + getName() + ", изучается в течение: " + getHours() + " часов");
     }
 
 }

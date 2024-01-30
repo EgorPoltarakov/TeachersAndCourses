@@ -10,6 +10,8 @@ public class Teacher implements Information {
     private int Age;
     private List<Course> courses;
 
+    private Teacher teacher;
+
     public Teacher(String name, int age) {
         this.Name = name;
         this.Age = age;
@@ -44,6 +46,7 @@ public class Teacher implements Information {
         courses.add(course);
     }
 
+
     public void deleteCourse (Course course){
         courses.remove(course);
     }
@@ -68,6 +71,7 @@ public class Teacher implements Information {
         this.Age = newAge;
     }
 
+    //Реализация метода из интерфейса
     @Override
     public void showInfo() {
         System.out.println("Информация о преподователе: ");
